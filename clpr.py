@@ -267,7 +267,8 @@ def characters(plt):
 	return chars
 
 # im = cv2.imread("C:/Users/iiitg/Desktop/python/h.jpg")
-im = cv2.imread("C:/Users/iiitg/Desktop/Python/modified data set/IMG-20170321-WA0103.jpg")
+img_src=input('image path: ')
+im = cv2.imread(img_src)
 print(im.shape)
 # img=cv2.GaussianBlur(img,(3,3),0)
 img=cv2.cvtColor(im,cv2.COLOR_BGR2GRAY)
